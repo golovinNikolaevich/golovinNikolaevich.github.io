@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="Learn HTML/CSS/JS">
+    <meta name="description" content="Это личная страница по изучению веб-технологий">
+    <meta name="author" content="Andrey Golovin">
+    <title>JS and HTML/CSS learn</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/donestyle/form.css">
+  </head>
+  <body>
+    <div class="wrap">
+      <nav>
+        <li><a href="../index.html">HTML/CSS</a></li>
+        <li><a href="../jstraining.html">Basik JS</a></li>
+        <li><a href="../dom.html">DOM</a></li>
+      </nav>
+      <div class="content">
+        <div class="form__block">
+          <h2>Resume</h2>
+          <form action="https://echo.htmlacademy.ru" method="POST">
+            <label for="male">Ваш пол:
+              <input id="male" type="radio" name="male">Мужской
+            </label>
+            <label for="fem">
+              <input id="fem" type="radio" name="fem">Женский
+            </label><br>
+            <label>Месяц и год рождения:<br>
+              <select>
+                <option value="Январь">Январь</option>
+                <option value="Февраль">Февраль</option>
+                <option value="Март">Март</option>
+              </select>
+              <select>
+                <option value="1990">1990</option>
+                <option value="1991">1991</option>
+                <option value="1992">1992</option>
+              </select>
+            </label><br>
+            <label>Знакомые технологии:<br>
+              <select multiple="">
+                <option value="HTML">HTML</option>
+                <option value="CSS" selected>CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Node">Node.js</option>
+              </select>
+            </label><br>
+            <label>Фото
+              <input type="file" name="photo"><br>
+              <input type="submit" value="Сохранить">
+            </label>
+          </form>
+        </div>
+        <div class="form__block">
+          <h2>Form Registration</h2>
+          <form action="https://echo.htmlacademy.ru" method="POST">
+            <label for="login">Ваш логин (email):<br>
+              <input id="login" type="text" name="login">
+            </label><br>
+            <label for="password">Пароль:<br>
+              <input type="password" name="password">
+            </label><br>
+            <label for="comment">Информация о себе:</label><br>
+            <textarea id="comment" name="comment" rows="5"></textarea><br>
+            <label>
+              <input id="check" type="checkbox" name="checkbox" checked>Подписаться на рассылку
+            </label><br>
+            <input type="submit" value="Зарегистрироваться">
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

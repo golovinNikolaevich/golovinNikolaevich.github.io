@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web')
+@import url('https://fonts.googleapis.com/css?family=Montserrat')
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300')
+
+*
+  margin: 0
+  padding: 0
+  list-style-type: none
+  text-decoration: none
+  box-sizing: border-box
+
+a
+  display: inline-block
+  font-family: 'Titillium Web', sans-serif
+  color: black
+  &:hover
+    text-decoration: underline
+
+body
+  min-width: 320px
+  max-width: 1024px
+  margin: 0 auto
+  padding: 10px
+  background-color: rgba(63, 111, 207, 0.7)
+  font-family: 'Open Sans Condensed', sans-serif
+  background: url('../img/br.jpg') center center / cover no-repeat
+  background-attachment: fixed
+  overflow-x: hidden
+
+.wu_links
+  &:before, &:after
+    content: ''
+    display: table
+    clear: both
+
+.wrap
+  margin: 0 auto
+  padding: 10px
+  background-color: rgba(144, 190, 234, 0.3)
+  border-radius: 5px
+  box-shadow: 0 0 24px #0e0e0e
+
+nav
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  margin-bottom: 10px
+  padding-bottom: 6px
+  border-radius: 5px
+  background: rgba(208, 221, 247, 0.68)
+  li
+    float: left
+  a
+    height: 30px
+    padding: 0 10px 5px
+    text-transform: uppercase
+    font-weight: bold
+    font-size: 20px
+    line-height: none !important
+    &:hover
+      border-bottom: 2px solid white
+      text-decoration: none
+      animation: link 0.5s ease-in infinite
+
+@keyframes link
+  from
+    transform: rotate(4deg)
+
+  to
+    transform: rotate(-4deg)
+
+
+.wu_school
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+  a
+    height: 22px
+    color: black
+
+.wu_links
+  width: 150px
+  margin: 5px 0
+  border: 1px solid grey
+  background-clip: content-box
+  box-shadow: 0 0 5px black
+  background: rgba(255, 255, 255, 0.4)
+  p
+    margin-bottom: 5px
+    padding: 5px
+    font-weight: bold
+    font-family: 'Montserrat', sans-serif
+    text-align: center
+    background: #dcb35b
+    box-shadow: 0 1px 2px black
+    color: #1c1b1b
+    clear: both
+    cursor: pointer
+    a
+      color: #464646
+    &:hover
+      background: white
+      transition: 0.8s
+      > a
+        color: black
+    &:before,
+    &:after
+      content: ' / '
+      color: white
+  li
+    padding-left: 10px
+
+.content
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+
+.question__interwiev
+  margin: 15px
+  padding: 5px
+  border: 5px solid lightgrey
+  box-shadow: 0 0 3px black
+  background: rgba(136, 107, 222, 0.38)
+
+.question__interwiev h2 
+  text-align: center
+  text-shadow: 0 0 3px black
+  color: white
+
+dt 
+  margin: 5px 0
+  font-weight: bold
+  font-size: 18px
+  cursor: pointer
+
+dd
+  margin-left: 5px
+  padding: 5px
+  cursor: pointer
+  background: lightgrey
+  color: black
+
+dd:hover 
+  box-shadow: 0 0 2px white
+  background: white
+  transition: 0.3s
+
+// JSTRAINING
+
+table
+  border-collapse: collapse // Убирает пространство схлопывания
+  width: 100%
+  margin: 0 auto
+  font-size: 18px
+  border: 1px solid black
+  color: white
+  td:nth-of-type(1),
+  tr:nth-of-type(1)
+    text-align: center
+    color: black
+  tr:nth-of-type(1) td:nth-of-type(2):hover
+    background: rgba(7, 183, 236, 0.8)
+  caption
+    padding: 5px 0
+    font-size: 25px
+    background: rgba(0, 0, 0, 0.5)
+    animation: letter 3s infinite
+    animation-timing-function: ease-out
+  td
+    padding: 4px 15px
+    border: 1px solid rgba(107, 106, 106, 0.3)
+    background: rgba(7, 183, 236, 0.8)
+  td:nth-of-type(2):hover
+    background: linear-gradient(to right, rgba(214, 40, 98, 0.75) 7%,rgba(7, 183, 236, 0.8) 100%)
+    color: black
+    transition: 0.3s
+    cursor: pointer
+  td:nth-of-type(2):hover .color__number
+    color: blue
+  span
+    text-decoration: underline
+  .color__number
+    padding-left: 10px
+    text-decoration: none
+    color: black
+
+@keyframes letter
+    0
+      color: white
+    50%
+      color: rgba(7, 183, 236, 0.48)
+    100%
+      color: white
